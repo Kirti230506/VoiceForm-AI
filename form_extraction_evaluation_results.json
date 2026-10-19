@@ -1,0 +1,349 @@
+{
+  "split_evaluated": "test",
+  "total_test_samples": 4,
+  "overall_micro_metrics": {
+    "precision": 0.9667,
+    "recall": 1.0,
+    "f1": 0.9831
+  },
+  "field_summary": {
+    "full_name": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "age": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "gender": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "education": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "phone": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "aadhaar": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "occupation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "annual_income": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "district": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "state": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "social_category": {
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "tp": 2,
+      "fp": 1,
+      "fn": 0
+    }
+  },
+  "sample_details": [
+    {
+      "id": "FX-EN-003",
+      "language": "en",
+      "text": "My name is Rajesh Patil. I am 35 years old male residing in Nashik, Maharashtra. I work as an electrician. My mobile number is 9822114455. My annual income is 120000 rupees and my category is General.",
+      "fields_compared": {
+        "full_name": {
+          "expected": "Rajesh Patil",
+          "predicted": "Rajesh Patil",
+          "status": "TP (Correct)"
+        },
+        "age": {
+          "expected": 35,
+          "predicted": 35,
+          "status": "TP (Correct)"
+        },
+        "gender": {
+          "expected": "Male",
+          "predicted": "Male",
+          "status": "TP (Correct)"
+        },
+        "education": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "phone": {
+          "expected": "9822114455",
+          "predicted": "9822114455",
+          "status": "TP (Correct)"
+        },
+        "aadhaar": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "occupation": {
+          "expected": "Artisan / Electrician",
+          "predicted": "Artisan / Electrician",
+          "status": "TP (Correct)"
+        },
+        "annual_income": {
+          "expected": 120000,
+          "predicted": 120000,
+          "status": "TP (Correct)"
+        },
+        "district": {
+          "expected": "Nashik",
+          "predicted": "Nashik",
+          "status": "TP (Correct)"
+        },
+        "state": {
+          "expected": "Maharashtra",
+          "predicted": "Maharashtra",
+          "status": "TP (Correct)"
+        },
+        "social_category": {
+          "expected": "General / Open",
+          "predicted": "General / Open",
+          "status": "TP (Correct)"
+        }
+      }
+    },
+    {
+      "id": "FX-EN-004",
+      "language": "en",
+      "text": "I am Yashodabai Patil. I am 65 years old widow living in Nagpur, Maharashtra. My mobile is 9988776655. My annual income is 35000 rupees. I need senior citizen old age pension assistance.",
+      "fields_compared": {
+        "full_name": {
+          "expected": "Yashodabai Patil",
+          "predicted": "Yashodabai Patil",
+          "status": "TP (Correct)"
+        },
+        "age": {
+          "expected": 65,
+          "predicted": 65,
+          "status": "TP (Correct)"
+        },
+        "gender": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "education": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "phone": {
+          "expected": "9988776655",
+          "predicted": "9988776655",
+          "status": "TP (Correct)"
+        },
+        "aadhaar": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "occupation": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "annual_income": {
+          "expected": 35000,
+          "predicted": 35000,
+          "status": "TP (Correct)"
+        },
+        "district": {
+          "expected": "Nagpur",
+          "predicted": "Nagpur",
+          "status": "TP (Correct)"
+        },
+        "state": {
+          "expected": "Maharashtra",
+          "predicted": "Maharashtra",
+          "status": "TP (Correct)"
+        },
+        "social_category": {
+          "expected": null,
+          "predicted": "ST (Scheduled Tribe)",
+          "status": "FP (Spurious)"
+        }
+      }
+    },
+    {
+      "id": "FX-HI-002",
+      "language": "hi",
+      "text": "मेरा नाम सुनीता देवी है। मैं महिला हूँ। मेरी आयु 45 वर्ष है। मैं भोपाल मध्य प्रदेश की निवासी हूँ। मेरा फोन नंबर 9425098765 है। मेरी आय 50000 है।",
+      "fields_compared": {
+        "full_name": {
+          "expected": "सुनीता देवी",
+          "predicted": "सुनीता देवी",
+          "status": "TP (Correct)"
+        },
+        "age": {
+          "expected": 45,
+          "predicted": 45,
+          "status": "TP (Correct)"
+        },
+        "gender": {
+          "expected": "Female",
+          "predicted": "Female",
+          "status": "TP (Correct)"
+        },
+        "education": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "phone": {
+          "expected": "9425098765",
+          "predicted": "9425098765",
+          "status": "TP (Correct)"
+        },
+        "aadhaar": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "occupation": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "annual_income": {
+          "expected": 50000,
+          "predicted": 50000,
+          "status": "TP (Correct)"
+        },
+        "district": {
+          "expected": "Bhopal",
+          "predicted": "Bhopal",
+          "status": "TP (Correct)"
+        },
+        "state": {
+          "expected": "Madhya Pradesh",
+          "predicted": "Madhya Pradesh",
+          "status": "TP (Correct)"
+        },
+        "social_category": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        }
+      }
+    },
+    {
+      "id": "FX-MR-002",
+      "language": "mr",
+      "text": "माझे नाव अनिता गायकवाड आहे. मी महिला आहे. वय 24 वर्षे आहे आणि मी पदवीधर आहे. मी पुणे येथे राहते. माझा मोबाईल 9765432109 आहे. माझी जात अनुसूचित जाती आहे.",
+      "fields_compared": {
+        "full_name": {
+          "expected": "अनिता गायकवाड",
+          "predicted": "अनिता गायकवाड आहे.",
+          "status": "TP (Correct)"
+        },
+        "age": {
+          "expected": 24,
+          "predicted": 24,
+          "status": "TP (Correct)"
+        },
+        "gender": {
+          "expected": "Female",
+          "predicted": "Female",
+          "status": "TP (Correct)"
+        },
+        "education": {
+          "expected": "Graduate (Bachelor's Degree)",
+          "predicted": "Graduate (Bachelor's Degree)",
+          "status": "TP (Correct)"
+        },
+        "phone": {
+          "expected": "9765432109",
+          "predicted": "9765432109",
+          "status": "TP (Correct)"
+        },
+        "aadhaar": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "occupation": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "annual_income": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "district": {
+          "expected": "Pune",
+          "predicted": "Pune",
+          "status": "TP (Correct)"
+        },
+        "state": {
+          "expected": null,
+          "predicted": null,
+          "status": "TN (Correctly Null)"
+        },
+        "social_category": {
+          "expected": "SC (Scheduled Caste)",
+          "predicted": "SC (Scheduled Caste)",
+          "status": "TP (Correct)"
+        }
+      }
+    }
+  ]
+}

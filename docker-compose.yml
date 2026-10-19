@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  voiceform-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: voiceform_ai_app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    volumes:
+      - ./backend/voiceform.db:/app/backend/voiceform.db
+    restart: unless-stopped

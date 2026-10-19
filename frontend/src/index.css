@@ -1,0 +1,302 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --vf-primary: #0B2545;
+  --vf-primary-hover: #133966;
+  --vf-secondary: #134074;
+  --vf-accent: #E76F51;
+  --vf-accent-hover: #D85A3B;
+  --vf-success: #2A9D8F;
+  --vf-warning: #E9C46A;
+  --vf-danger: #E63946;
+  --vf-bg: #F4F6F9;
+  --vf-card-bg: #FFFFFF;
+  --vf-text-dark: #1F2937;
+  --vf-text-muted: #64748B;
+  --vf-border: #E2E8F0;
+  --vf-shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --vf-shadow-md: 0 4px 12px rgba(11, 37, 69, 0.08);
+  --vf-shadow-lg: 0 10px 25px rgba(11, 37, 69, 0.12);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--vf-bg);
+  color: var(--vf-text-dark);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* National Tricolor Accent Bar */
+.gov-top-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  width: 100%;
+}
+
+/* Navbar */
+.vf-navbar {
+  background-color: var(--vf-primary);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border-bottom: 2px solid #FF9933;
+}
+
+.vf-brand {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #FFFFFF !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vf-brand-badge {
+  background: linear-gradient(135deg, #FF9933, #E76F51);
+  color: white;
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-link.custom-nav {
+  color: #E2E8F0 !important;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link.custom-nav:hover,
+.nav-link.custom-nav.active {
+  color: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #0B2545 0%, #134074 100%);
+  color: #FFFFFF;
+  padding: 60px 0 50px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: var(--vf-shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(231, 111, 81, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Buttons */
+.btn-gov-primary {
+  background-color: var(--vf-accent);
+  color: #FFFFFF;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px 24px;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-gov-primary:hover {
+  background-color: var(--vf-accent-hover);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(231, 111, 81, 0.3);
+}
+
+.btn-gov-secondary {
+  background-color: #FFFFFF;
+  color: var(--vf-primary);
+  border: 1px solid #CBD5E1;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px 24px;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-gov-secondary:hover {
+  background-color: #F8FAFC;
+  color: var(--vf-primary-hover);
+  border-color: #94A3B8;
+  transform: translateY(-2px);
+  box-shadow: var(--vf-shadow-sm);
+}
+
+/* Custom Cards */
+.vf-card {
+  background: var(--vf-card-bg);
+  border: 1px solid var(--vf-border);
+  border-radius: 16px;
+  box-shadow: var(--vf-shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.vf-card:hover {
+  box-shadow: var(--vf-shadow-md);
+}
+
+/* Audio Recording Waves */
+.waveform-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 40px;
+}
+
+.wave-bar {
+  width: 4px;
+  height: 12px;
+  background: var(--vf-accent);
+  border-radius: 3px;
+  animation: waveAnimation 1s ease-in-out infinite alternate;
+}
+
+.wave-bar:nth-child(2) { animation-delay: 0.15s; }
+.wave-bar:nth-child(3) { animation-delay: 0.3s; }
+.wave-bar:nth-child(4) { animation-delay: 0.45s; }
+.wave-bar:nth-child(5) { animation-delay: 0.6s; }
+.wave-bar:nth-child(6) { animation-delay: 0.75s; }
+.wave-bar:nth-child(7) { animation-delay: 0.9s; }
+
+@keyframes waveAnimation {
+  0% { height: 8px; opacity: 0.4; }
+  100% { height: 36px; opacity: 1; }
+}
+
+/* Recording Pulse Indicator */
+.recording-pulse {
+  position: relative;
+}
+
+.recording-pulse::after {
+  content: "";
+  position: absolute;
+  top: -8px; left: -8px; right: -8px; bottom: -8px;
+  border-radius: 50%;
+  border: 2px solid var(--vf-danger);
+  animation: pulseRadar 1.5s infinite;
+}
+
+@keyframes pulseRadar {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* Entity Badge Chips */
+.entity-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #EEF4F8;
+  border: 1px solid #BFD7EA;
+  color: var(--vf-primary);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  margin: 4px;
+}
+
+.entity-chip-confidence {
+  font-size: 0.72rem;
+  background-color: #2A9D8F;
+  color: white;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Government Scheme Card */
+.scheme-card {
+  border-left: 5px solid var(--vf-accent);
+  border-radius: 14px;
+}
+
+.scheme-card.eligible {
+  border-left-color: #2A9D8F;
+}
+
+.scheme-match-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Official Disclaimer Box */
+.gov-disclaimer-box {
+  background-color: #FEF3C7;
+  border: 1px solid #F59E0B;
+  border-left: 5px solid #D97706;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: #92400E;
+}
+
+/* Floating AI Assistant Trigger */
+.floating-assistant-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1050;
+  background: linear-gradient(135deg, #0B2545, #134074);
+  color: #FFFFFF;
+  border: 2px solid #FF9933;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(11, 37, 69, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.floating-assistant-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  color: white;
+  box-shadow: 0 12px 28px rgba(11, 37, 69, 0.35);
+}
+
+/* Form Section Nav Tabs */
+.form-step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #E2E8F0;
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-right: 8px;
+}
+
+.form-step-badge.active {
+  background-color: var(--vf-accent);
+  color: #FFFFFF;
+}
+
+.form-step-badge.completed {
+  background-color: #2A9D8F;
+  color: #FFFFFF;
+}

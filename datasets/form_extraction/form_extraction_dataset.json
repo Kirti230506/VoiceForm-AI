@@ -1,0 +1,178 @@
+[
+  {
+    "id": "FX-EN-001",
+    "language": "en",
+    "split": "train",
+    "text": "My name is Ramesh Kumar. I am 42 years old. My mobile number is 9876543210 and Aadhaar is 5432 8765 1290. I am a farmer living in Pune, Maharashtra. My annual income is 1.5 lakh rupees and category is OBC.",
+    "target_form": "pm_kisan",
+    "ground_truth": {
+      "full_name": "Ramesh Kumar",
+      "age": 42,
+      "date_of_birth": null,
+      "gender": null,
+      "education": null,
+      "phone": "9876543210",
+      "aadhaar": "5432 8765 1290",
+      "occupation": "Farmer / Shetkari / Kisan",
+      "annual_income": 150000,
+      "district": "Pune",
+      "state": "Maharashtra",
+      "social_category": "OBC (Other Backward Class)"
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-EN-002",
+    "language": "en",
+    "split": "train",
+    "text": "My name is Priya Sharma. I am 20 years old and a female college student residing in Lucknow, Uttar Pradesh. My father is Suresh Sharma. My phone number is 9123456780. Our annual household income is 80000 rupees and category is SC.",
+    "target_form": "income_certificate",
+    "ground_truth": {
+      "full_name": "Priya Sharma",
+      "age": 20,
+      "date_of_birth": null,
+      "gender": "Female",
+      "education": "Student",
+      "phone": "9123456780",
+      "aadhaar": null,
+      "occupation": "Student",
+      "annual_income": 80000,
+      "district": "Lucknow",
+      "state": "Uttar Pradesh",
+      "social_category": "SC (Scheduled Caste)"
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-EN-003",
+    "language": "en",
+    "split": "test",
+    "text": "My name is Rajesh Patil. I am 35 years old male residing in Nashik, Maharashtra. I work as an electrician. My mobile number is 9822114455. My annual income is 120000 rupees and my category is General.",
+    "target_form": "income_certificate",
+    "ground_truth": {
+      "full_name": "Rajesh Patil",
+      "age": 35,
+      "date_of_birth": null,
+      "gender": "Male",
+      "education": null,
+      "phone": "9822114455",
+      "aadhaar": null,
+      "occupation": "Artisan / Electrician",
+      "annual_income": 120000,
+      "district": "Nashik",
+      "state": "Maharashtra",
+      "social_category": "General / Open"
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-EN-004",
+    "language": "en",
+    "split": "test",
+    "text": "I am Yashodabai Patil. I am 65 years old widow living in Nagpur, Maharashtra. My mobile is 9988776655. My annual income is 35000 rupees. I need senior citizen old age pension assistance.",
+    "target_form": "senior_pension",
+    "ground_truth": {
+      "full_name": "Yashodabai Patil",
+      "age": 65,
+      "date_of_birth": null,
+      "gender": null,
+      "education": null,
+      "phone": "9988776655",
+      "aadhaar": null,
+      "occupation": null,
+      "annual_income": 35000,
+      "district": "Nagpur",
+      "state": "Maharashtra",
+      "social_category": null
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-HI-001",
+    "language": "hi",
+    "split": "train",
+    "text": "मेरा नाम अमित कुमार है। मेरी उम्र 28 वर्ष है। मैं एक किसान हूँ और पटना बिहार में रहता हूँ। मेरा मोबाइल नंबर 9835012345 है। मेरी वार्षिक आय 60000 रुपये है और वर्ग ओबीसी है।",
+    "target_form": "income_certificate",
+    "ground_truth": {
+      "full_name": "अमित कुमार",
+      "age": 28,
+      "date_of_birth": null,
+      "gender": null,
+      "education": null,
+      "phone": "9835012345",
+      "aadhaar": null,
+      "occupation": "Farmer / Shetkari / Kisan",
+      "annual_income": 60000,
+      "district": "Patna",
+      "state": "Bihar",
+      "social_category": "OBC (Other Backward Class)"
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-HI-002",
+    "language": "hi",
+    "split": "test",
+    "text": "मेरा नाम सुनीता देवी है। मैं महिला हूँ। मेरी आयु 45 वर्ष है। मैं भोपाल मध्य प्रदेश की निवासी हूँ। मेरा फोन नंबर 9425098765 है। मेरी आय 50000 है।",
+    "target_form": "income_certificate",
+    "ground_truth": {
+      "full_name": "सुनीता देवी",
+      "age": 45,
+      "date_of_birth": null,
+      "gender": "Female",
+      "education": null,
+      "phone": "9425098765",
+      "aadhaar": null,
+      "occupation": null,
+      "annual_income": 50000,
+      "district": "Bhopal",
+      "state": "Madhya Pradesh",
+      "social_category": null
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-MR-001",
+    "language": "mr",
+    "split": "train",
+    "text": "माझे नाव सचिन जाधव आहे. माझे वय 38 वर्षे आहे. मी शेतकरी आहे आणि सातारा महाराष्ट्र येथे राहतो. माझा मोबाईल नंबर 9822012345 आहे. माझे वार्षिक उत्पन्न 90000 रुपये आहे.",
+    "target_form": "pm_kisan",
+    "ground_truth": {
+      "full_name": "सचिन जाधव",
+      "age": 38,
+      "date_of_birth": null,
+      "gender": null,
+      "education": null,
+      "phone": "9822012345",
+      "aadhaar": null,
+      "occupation": "Farmer / Shetkari / Kisan",
+      "annual_income": 90000,
+      "district": null,
+      "state": "Maharashtra",
+      "social_category": null
+    },
+    "review_status": "VERIFIED"
+  },
+  {
+    "id": "FX-MR-002",
+    "language": "mr",
+    "split": "test",
+    "text": "माझे नाव अनिता गायकवाड आहे. मी महिला आहे. वय 24 वर्षे आहे आणि मी पदवीधर आहे. मी पुणे येथे राहते. माझा मोबाईल 9765432109 आहे. माझी जात अनुसूचित जाती आहे.",
+    "target_form": "caste_certificate",
+    "ground_truth": {
+      "full_name": "अनिता गायकवाड",
+      "age": 24,
+      "date_of_birth": null,
+      "gender": "Female",
+      "education": "Graduate (Bachelor's Degree)",
+      "phone": "9765432109",
+      "aadhaar": null,
+      "occupation": null,
+      "annual_income": null,
+      "district": "Pune",
+      "state": null,
+      "social_category": "SC (Scheduled Caste)"
+    },
+    "review_status": "VERIFIED"
+  }
+]

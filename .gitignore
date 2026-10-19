@@ -1,0 +1,46 @@
+# ==========================================
+# VoiceForm AI - Root Git Ignore Rules
+# ==========================================
+
+# Virtual Environments (DO NOT commit - platform specific & large binaries)
+backend/venv/
+venv/
+env/
+.venv/
+
+# Python cache & compiled bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Local databases
+backend/voiceform.db
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment variables & secrets
+.env
+backend/.env
+frontend/.env
+*.local
+
+# Frontend dependencies
+frontend/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Log files
+*.log
+
+# Temporary test audio
+voiceform_test.wav
+*.tmp
+temp_audio/
+
+# Frontend build output
+frontend/dist/

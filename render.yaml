@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: voiceform-ai
+    env: docker
+    plan: standard
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8000

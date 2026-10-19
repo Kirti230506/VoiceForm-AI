@@ -1,0 +1,62 @@
+[
+  {
+    "filename": "en_1.wav",
+    "language": "English",
+    "whisper_lang_code": "en",
+    "detected_lang": "en",
+    "reference_transcript": "a tornado is a spinning column of very low-pressure air which sucks the surrounding air inward and upward",
+    "predicted_transcript": "A tornado is a spinning column of very low pressure air, which sucks a surrounding air inward and upward.",
+    "inference_time_sec": 3.06,
+    "wer": 0.0526,
+    "cer": 0.0345,
+    "status": "SUCCESS"
+  },
+  {
+    "filename": "en_2.wav",
+    "language": "English",
+    "whisper_lang_code": "en",
+    "detected_lang": "en",
+    "reference_transcript": "former u.s. speaker of the house newt gingrich came in second with 32%",
+    "predicted_transcript": "Former US Speaker of the House, Newt, Gingrich, came in second with 32%.",
+    "inference_time_sec": 2.33,
+    "wer": 0.1429,
+    "cer": 0.0,
+    "status": "SUCCESS"
+  },
+  {
+    "filename": "hi_1.wav",
+    "language": "Hindi",
+    "whisper_lang_code": "hi",
+    "detected_lang": "hi",
+    "reference_transcript": "राजनीतिज्ञों ने कहा कि उन्होंने निर्णायक मत को अनावश्यक रूप से निर्धारित करने के लिए अफ़गान संविधान में काफी अस्पष्टता पाई थी",
+    "predicted_transcript": "Raj Nithi Gyo Neh Kaha Ki Unand Neh Rana Yag Matko Anavashak Rupsel Neh Dhail Kanna Kya Nneh Kya Nneh Afgan Savidhan Me Khafi Aspa Shlava Paithi",
+    "inference_time_sec": 3.9,
+    "wer": 1.0,
+    "cer": 1.0,
+    "status": "SUCCESS"
+  },
+  {
+    "filename": "hi_2.wav",
+    "language": "Hindi",
+    "whisper_lang_code": "hi",
+    "detected_lang": "hi",
+    "reference_transcript": "जब आप छुट्टी पर होते हैं तो आपके पास खुद के लिए समय होता है और कुछ विशेष करने के लिए अतिरिक्त समय निकालें",
+    "predicted_transcript": "ज़ावाँ जूटी पर होते हैं तो आपकी पास कुद किले समे होता हैं आपकोशशश करने किले एपक समेन कालें",
+    "inference_time_sec": 4.6,
+    "wer": 0.7083,
+    "cer": 0.4024,
+    "status": "SUCCESS"
+  },
+  {
+    "filename": "mr_1.wav",
+    "language": "Marathi",
+    "whisper_lang_code": "mr",
+    "detected_lang": "mr",
+    "reference_transcript": "या राक्षसी वादळामध्ये वारे 480km/h 133 m/s; 300 mph इतके असू शकतात",
+    "predicted_transcript": "ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa ھa",
+    "inference_time_sec": 8.88,
+    "wer": 1.0,
+    "cer": 1.0,
+    "status": "SUCCESS"
+  }
+]
