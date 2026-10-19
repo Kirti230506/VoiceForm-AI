@@ -1,3 +1,13 @@
+---
+title: VoiceForm AI
+emoji: 🎙️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🎙️ VoiceForm AI — AI-Powered Voice Government Form Assistant
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
