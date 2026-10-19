@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// Create configured axios instance
+// Create configured axios instance with optional custom backend URL (for Vercel deployment)
 const api = axios.create({
-  baseURL: '',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '',
   headers: {
     'Accept': 'application/json',
   }
